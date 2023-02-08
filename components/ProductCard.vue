@@ -20,10 +20,10 @@ const count = ref(0);
     <div>
       {{ product.name }} - <span class="text-green-500">${{product.price}}</span>
       <div class="text-center m-4">
-        <!--AppCountInput v-model="count" /-->
+        <AppCountInput v-model="count" />
       </div>
-      <!--AppButton
-        class="primary" @click="$emit('addToCart', count), (count = 0)">Add to Cart</AppButton-->
+      <AppButton
+        class="primary" @click="$emit('addToCart', count), (count = 0)">Add to Cart</AppButton>
     </div>
   </li>
 </template>
