@@ -34,6 +34,18 @@ const updateValue = (value) => {
 </template>
 
 <style scoped>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 input[type="number"] {
   appearance: none;
   -moz-appearance: textfield;
@@ -44,3 +56,4 @@ button {
   border: 1px solid gray;
 }
 </style>
+
